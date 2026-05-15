@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pro Stopwatch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="top-bar">
+    <h1>⏱ Stopwatch</h1>
+    <button onclick="toggleTheme()" id="themeBtn">🌙</button>
+  </div>
+
+  <div id="display">00:00:00:00</div>
+
+  <div class="buttons">
+    <button class="start" onclick="start()">Start</button>
+    <button class="pause" onclick="pause()">Pause</button>
+    <button class="reset" onclick="reset()">Reset</button>
+    <button class="lap" onclick="lap()">Lap</button>
+  </div>
+
+  <h2>Lap Times</h2>
+  <ul id="laps"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
